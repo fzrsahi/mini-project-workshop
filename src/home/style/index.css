@@ -1,0 +1,3 @@
+.rotated {
+    transform: rotate(30deg); /* Equal to rotateZ(45deg) */
+  }
