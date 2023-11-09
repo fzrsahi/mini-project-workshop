@@ -28,6 +28,10 @@ export function Login() {
   };
 
   const handleLogin = (username, password) => {
+    const handleError = username && password;
+    if (!handleError) {
+      return toast("Bad Request");
+    }
     if (username == userName && password == passWord) {
       toast("Berhasil Login");
       setIsLogin(true);

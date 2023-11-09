@@ -7,7 +7,7 @@ import { createContext, useState } from "react";
 export const DataContext = createContext({});
 
 function App() {
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
   const [carts, setCarts] = useState([]);
   const [isCartsPages, setIsCartsPages] = useState([false]);
   const [isLoginPages, setIsLoginPages] = useState([false]);
