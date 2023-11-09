@@ -1,14 +1,30 @@
+import { useContext } from "react";
+import { DataContext } from "../App";
 import { BestSeler } from "./BestSeler";
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 import { Products } from "./Products";
 import "./style/index.css";
+import { Cart } from ".";
 
 export function Home() {
+  const {
+    isCartsPages,
+    setIsCartsPages,
+    isLoginPages,
+    setIsLoginPages,
+    isHomePages,
+    setIsHomePages,
+  } = useContext(DataContext);
+
+  // setIsHomePages(true);
+
+  // setIsCartsPages(false);
   return (
     <div>
       <Navbar />
-      <div className="container-fluid mt-5">
+
+      {/* <div className="container-fluid mt-5">
         <div className="container">
           <div className="d-flex justify-content-between text-white rounded bg-dark p-5">
             <div className="">
@@ -49,7 +65,10 @@ export function Home() {
           <p>here are many variations passages</p>
         </div>
         <BestSeler />
-      </div>
+      </div> */}
+
+      {isHomePages ? <Products /> : <Cart />}
+
       <Footer />
     </div>
   );
