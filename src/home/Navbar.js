@@ -3,6 +3,7 @@ import { DataContext } from "../App";
 import { Cart } from "./Cart";
 import { Login } from "../auth";
 import { Home } from ".";
+import doraemon from "./../doraemon.png";
 
 export function Navbar() {
   const { carts, cartLength, is } = useContext(DataContext);
@@ -29,7 +30,7 @@ export function Navbar() {
           <div className="container-fluid">
             <div className="d-flex">
               <img
-                src="https://www.freepnglogos.com/uploads/real-madrid-logo-png/real-madrid-logo-real-madrid-kits-dream-league-soccer-fts-kuchalana-4.png"
+                src={doraemon}
                 className="ms-5"
                 style={{
                   width: "60px",
@@ -37,7 +38,7 @@ export function Navbar() {
                 }}
               ></img>
               <a className="navbar-brand ms-2 mt-3" href="#">
-                Naruto Shop
+                Doraemon Shop
               </a>
             </div>
             <button className="btn w-25">

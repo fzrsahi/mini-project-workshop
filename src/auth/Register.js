@@ -1,5 +1,6 @@
-import "./style/index.css";
+// import styled from 'styled-component';
 
-export function Register() {
-  return <h1>Ini Register</h1>;
-}
+// export const Container = styled.div`
+//   background-color: #fff;
+//   border-radius: 10px;
+//   `;
