@@ -21,17 +21,17 @@ export function Products() {
         <div className="d-flex justify-content-between text-white rounded bg-dark p-5">
           <div className="">
             <h1 class="display-4 fst-italic">
-              Digital Outlet Ritel Aneka barang Elektronik Modern Oleh biafra
-              daN fazrul(DORAEMON-SHOP)
+              Digital Outlet Ritel Aneka Elektronik Modern Oleh Fazhrul And
+              Biafra(DORAEMON-SHOP)
             </h1>
             <p class="lead my-3 ">
-              Digital Outlet Ritel Aneka barang Elektronik Modern Oleh biafra
-              daN fazrul(doraemon shop) adalah layanan online yang menjual
-              berbagai macam barang elektronik modern dengan harga yang
-              kompetitif. Toko ini menawarkan berbagai pilihan produk, mulai
-              dari HP, LAPTOP, NASIGORENG, hingga ILMU HITAM. Selain itu,
-              Doraemon Shop juga menyediakan layanan pengiriman gratis ke
-              seluruh Indonesia bahkan sampai to the bone.
+              Digital Outlet Ritel Aneka Elektronik Modern Oleh Fazhrul And
+              Biafra(Doraemon Shop) adalah layanan online yang menjual berbagai
+              macam barang elektronik modern dengan harga yang kompetitif. Toko
+              ini menawarkan berbagai pilihan produk, mulai dari HP, LAPTOP,
+              NASIGORENG, hingga ILMU HITAM. Selain itu, Doraemon Shop juga
+              menyediakan layanan pengiriman gratis ke seluruh Indonesia bahkan
+              sampai to the bone.
             </p>
             <p class="lead mb-0">
               <a href="#" class="text-white fw-bold">

@@ -37,7 +37,13 @@ export function Navbar() {
                   height: "60px",
                 }}
               ></img>
-              <a className="navbar-brand ms-2 mt-3" href="#">
+              <a
+                className="navbar-brand ms-2 mt-3"
+                href="#"
+                onClick={() => {
+                  setIsHomePages(true);
+                }}
+              >
                 Doraemon Shop
               </a>
             </div>

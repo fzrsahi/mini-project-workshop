@@ -23,7 +23,7 @@ export function Login() {
     } else {
       setUserName(name);
       setPassWord(pass);
-      toast("Berhasil Buat Akun");
+      toast("Ciee bisa buat akun");
     }
   };
 
@@ -36,7 +36,7 @@ export function Login() {
       toast("Berhasil Login");
       setIsLogin(true);
     } else {
-      toast("Username Atau Password Salah");
+      toast("Username atau password Salah nih bang gabisa login");
     }
   };
 
@@ -44,33 +44,34 @@ export function Login() {
     <Components.Container>
       <Components.SignUpContainer signinIn={signIn}>
         <Components.Form>
-          <Components.Title>Create Account</Components.Title>
+          <Components.Title>Create Account Disini</Components.Title>
           <Components.Input
             onChange={(e) => setUsername(e.target.value)}
             value={username}
             type="text"
-            placeholder="username"
+            placeholder="Usernamenya jangan alay"
             required
           />
           <Components.Input
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             type="email"
-            placeholder="email"
+            placeholder="Example@gmail.com"
             required
           />
           <Components.Input
             onChange={(e) => setPassword(e.target.value)}
             value={password}
             type="password"
-            placeholder="password"
+            placeholder="Password yang gampang aja"
             required
           />
           <h5000
             className="fw-normal mb-1 mx-5 w-100"
             style={{ letterSpacing: "1px" }}
           >
-            We'll never share your password with anyone else.
+            Rahasia password yang tau cuma kamu dan tuhan aja yang tau, saya
+            juga tau.
           </h5000>
           <Components.Button
             type="button"
@@ -78,7 +79,7 @@ export function Login() {
               handleRegister(username, email, password);
             }}
           >
-            Register
+            Register Dulu Baru Login
           </Components.Button>
           <Toaster
             toastOptions={{
@@ -111,19 +112,19 @@ export function Login() {
 
       <Components.SignInContainer signinIn={signIn}>
         <Components.Form>
-          <Components.Title>Login</Components.Title>
+          <Components.Title>Login Dulu Fren</Components.Title>
           <Components.Input
             onChange={(e) => setInsertedUsernameRegister(e.target.value)}
             value={insertedUsernameRegister}
             type="username"
-            placeholder="Username"
+            placeholder="Masukin Username"
             required
           />
           <Components.Input
             onChange={(e) => setInsertedPasswordLogin(e.target.value)}
             value={insertedPasswordLogin}
             type="password"
-            placeholder="Password"
+            placeholder="Password Jangan Ngasal"
             required
           />
           <Components.Button
@@ -132,7 +133,7 @@ export function Login() {
               handleLogin(insertedUsernameRegister, insertedPasswordLogin)
             }
           >
-            Login
+            Login Disini
           </Components.Button>
           <Toaster
             containerStyle={{ position: "absolute" }}
@@ -150,23 +151,30 @@ export function Login() {
       <Components.OverlayContainer signinIn={signIn}>
         <Components.Overlay signinIn={signIn}>
           <Components.LeftOverlayPanel signinIn={signIn}>
-            <Components.Title>Welcome Back!</Components.Title>
+            <Components.Title>
+              Udah bikin akunnya? yaudah login dulu
+            </Components.Title>
             <Components.Paragraph>
-              Please login first and happy shopping spree
+              Login dulu abis itu foya-foya
             </Components.Paragraph>
             <Components.GhostButton onClick={() => toggle(true)}>
-              Login
+              Nih Login
             </Components.GhostButton>
           </Components.LeftOverlayPanel>
 
           <Components.RightOverlayPanel signinIn={signIn}>
-            <Components.Title>Hello, Friend!</Components.Title>
+            <Components.Title>
+              Hello, Welcome To Doraemon Shop!
+            </Components.Title>
             <Components.Paragraph>
-              Don't have an account yet? Please register first to continue
-              shopping at naruto's shop
+              DORAEMON: Digital Outlet Ritel Aneka Elektronik Modern Oleh
+              Fazhrul And Biafra
+            </Components.Paragraph>
+            <Components.Paragraph>
+              Gapunya akun doraemon? bikin dulu biar bisa hamburin uang.
             </Components.Paragraph>
             <Components.GhostButton onClick={() => toggle(false)}>
-              Register
+              Nih Register
             </Components.GhostButton>
           </Components.RightOverlayPanel>
         </Components.Overlay>
