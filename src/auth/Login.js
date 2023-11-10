@@ -19,7 +19,7 @@ export function Login() {
   const handleRegister = (name, emails, pass) => {
     const handleError = name && emails && pass;
     if (!handleError) {
-      toast("Bad Request");
+      toast("Isi yang niat");
     } else {
       setUserName(name);
       setPassWord(pass);
@@ -30,7 +30,7 @@ export function Login() {
   const handleLogin = (username, password) => {
     const handleError = username && password;
     if (!handleError) {
-      return toast("Bad Request");
+      return toast("Isi dulu yang bener");
     }
     if (username == userName && password == passWord) {
       toast("Berhasil Login");
